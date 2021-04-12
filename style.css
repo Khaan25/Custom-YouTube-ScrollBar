@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+/* ========== VARIABLES ========== */
+
+:root {
+    /* COLORS */
+    --primary-color: rgb(199, 199, 199);
+    --secondary-color: rgb(157, 157, 157);
+    --paragraph-color: rgb(150, 145, 145);
+    --scrollbar-background-color: #909090;
+    --scrollbar-hover-color: #606060;
+    --background-color: #212123;
+    /* TypoGraphy */
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* ========== BASE ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+}
+
+/* ========== LAYOUT ========== */
+
+h1 {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    padding: .2em;
+}
+
+p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    color: var(--paragraph-color);
+}
+
+/* ========== SCROLL-BAR (YouTube) ========== */
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* SCROLLBAR THUMB */
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-background-color);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* SCROLLBAR TRACK */
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+/* SCROLLBAR THUMB : HOVER */
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-hover-color);
+}
